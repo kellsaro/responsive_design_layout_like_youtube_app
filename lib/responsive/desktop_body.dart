@@ -31,31 +31,45 @@ class DesktopBody extends StatelessWidget {
                     ),
                   ),
 
-                  // comment section
+                  // comments section
                   Expanded(
-                    child: ListView.builder(
-                      itemCount: 8,
-                      itemBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Container(
-                            color: Colors.deepPurple[300],
-                            height: 120,
-                          ),
-                        );
-                      },
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 8.0),
+                      child: ListView.builder(
+                        itemCount: 8,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              color: Colors.deepPurple[300],
+                              height: 120,
+                            ),
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
 
-            // recommended videos
+            // second column: recommended videos
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
                 width: 200,
-                color: Colors.deepPurple[300],
+                child: ListView.builder(
+                  itemCount: 8,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 16.0),
+                      child: Container(
+                        color: Colors.deepPurple[300],
+                        height: 150,
+                      ),
+                    );
+                  },
+                ),
               ),
             ),
           ],
