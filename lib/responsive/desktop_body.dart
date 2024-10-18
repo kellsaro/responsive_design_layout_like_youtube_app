@@ -9,13 +9,13 @@ class DesktopBody extends StatelessWidget {
       backgroundColor: Colors.deepPurple[200],
       appBar: AppBar(
         title: const Text('D E S K T O P'),
+        backgroundColor: Colors.deepPurple[600],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: [
-            // first column
-
+            // first column: video and comments
             Expanded(
               child: Column(
                 children: [

@@ -9,6 +9,7 @@ class MobileBody extends StatelessWidget {
       backgroundColor: Colors.deepPurple[200],
       appBar: AppBar(
         title: const Text('M O B I L E'),
+        backgroundColor: Colors.deepPurple[600],
       ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
