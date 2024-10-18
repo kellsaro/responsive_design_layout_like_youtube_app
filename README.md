@@ -1,3 +1,4 @@
-# responsive_design_layout_like_youtube_app
+# Responsive layout design similar to youtube
 
-A new Flutter project.
+![image](./app_showcase.gif)
+
