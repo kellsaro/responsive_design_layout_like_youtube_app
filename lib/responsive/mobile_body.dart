@@ -12,6 +12,7 @@ class MobileBody extends StatelessWidget {
       ),
       body: Column(
         children: [
+          // video
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: AspectRatio(
@@ -20,6 +21,22 @@ class MobileBody extends StatelessWidget {
                 height: 250,
                 color: Colors.deepPurple[400],
               ),
+            ),
+          ),
+
+          // comment section & recommended videos
+          Expanded(
+            child: ListView.builder(
+              itemCount: 8,
+              itemBuilder: (context, index) {
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    color: Colors.deepPurple[300],
+                    height: 120,
+                  ),
+                );
+              },
             ),
           ),
         ],
